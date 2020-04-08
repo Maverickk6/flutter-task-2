@@ -80,10 +80,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 elevation: 5.0,
                 textColor: Colors.white,
                 splashColor: Colors.yellow[200],
-                color: Colors.lightBlueAccent,
+                color: Colors.lightBlue[400],
                 shape: RoundedRectangleBorder(
                   borderRadius: new BorderRadius.circular(5.0),
-                  side: BorderSide(color: Colors.black),
+                  // side: BorderSide(color: Colors.black),
                 ),
                 onPressed: () => print("Button Pressed"),
                 child: new Text("Log In",
