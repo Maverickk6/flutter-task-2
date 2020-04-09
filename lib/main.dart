@@ -33,6 +33,23 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              height: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/office.jpeg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: Scaffold(
+                
+                backgroundColor: Colors.transparent,
+                body: Container(
+                  
+                  child: Text("Enter Your Login Details")
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(10),
               child: Text("Enter Your Login Details",
@@ -44,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 20),
             Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.only(left:30, right: 30,),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -57,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 10,
             ),
             Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(30),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -68,8 +85,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 40),
             ButtonTheme(
-              minWidth: 200.0,
-              height: 80.0,
+              minWidth: 300.0,
+              height: 50.0,
               child: new RaisedButton(
                 // padding: const EdgeInsets.only(
                 //   top: 30.0,
@@ -88,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () => print("Button Pressed"),
                 child: new Text("Log In",
                     style: TextStyle(
-                      fontSize: 32.0,
+                      fontSize: 20.0,
                       fontWeight: FontWeight.normal,
                       fontStyle: FontStyle.normal,
                     )),
